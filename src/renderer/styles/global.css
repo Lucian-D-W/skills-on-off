@@ -1,0 +1,325 @@
+@font-face {
+  font-family: 'SkillUI';
+  src: url('../../../fonts/SourceHanSansCN-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SkillUI';
+  src: url('../../../fonts/SourceHanSansCN-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SkillUI';
+  src: url('../../../fonts/SourceHanSansCN-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SkillUI';
+  src: url('../../../fonts/SourceHanSansCN-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SkillUI';
+  src: url('../../../fonts/SourceHanSansCN-Heavy.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ─────────────────────────────────────────────
+   MORANDI CALM
+   Source: https://www.ysdaima.com/palettes/style-morandi-calm/
+───────────────────────────────────────────── */
+:root,
+[data-theme="morandi-calm"],
+[data-theme="light"] {
+  --font-ui: 'SkillUI', 'Source Han Sans CN', 'Microsoft YaHei UI', 'Microsoft YaHei', 'PingFang SC', 'PingFang TC', sans-serif;
+  --bg:        #efebe4;
+  --bg2:       #e4ddd3;
+  --bg3:       #d9d0c5;
+  --bg4:       #c8bdaf;
+  --surface:   #f7f3ed;
+  --border:    #cbc1b4;
+  --border2:   #b3a89a;
+  --text:      #2d2823;
+  --text2:     #665d54;
+  --text3:     #9b9085;
+  --accent:    #8d8679;
+  --accent2:   #b4c4b0;
+  --accent-soft: rgba(141, 134, 121, 0.18);
+  --accent-contrast: #faf7f2;
+  --red:       #b25d57;
+  --green:     #7f9771;
+  --on-color:  var(--accent);
+  --off-color: #9a948c;
+  --grid-color: rgba(95,74,62,0.045);
+  --grid-size: 28px;
+  --shadow:    0 1px 3px rgba(83, 70, 59, 0.12), 0 1px 2px rgba(83, 70, 59, 0.08);
+  --tag-text-sat: 28%;
+  --tag-text-light: 42%;
+  --tag-border-sat: 34%;
+  --tag-border-light: 76%;
+  --tag-border-alpha: 0.78;
+  --tag-bg-sat: 58%;
+  --tag-bg-light: 90%;
+  --tag-bg-alpha: 1;
+}
+
+/* ─────────────────────────────────────────────
+   EARTH CLAY
+   Source inspiration: https://www.ysdaima.com/charts/chart-style-earth/
+───────────────────────────────────────────── */
+[data-theme="earth-clay"] {
+  --bg:        #efe2d3;
+  --bg2:       #e6d4bf;
+  --bg3:       #d9bea0;
+  --bg4:       #c8a786;
+  --surface:   #f7efe6;
+  --border:    #d0b699;
+  --border2:   #b99671;
+  --text:      #36271d;
+  --text2:     #6c5847;
+  --text3:     #a08b76;
+  --accent:    #8b5e3c;
+  --accent2:   #c9a46a;
+  --accent-soft: rgba(139, 94, 60, 0.18);
+  --accent-contrast: #fff8f1;
+  --red:       #a85a42;
+  --green:     #7d8c59;
+  --on-color:  var(--accent);
+  --off-color: #aa9278;
+  --grid-color: rgba(109, 76, 47, 0.05);
+  --grid-size: 28px;
+  --shadow:    0 1px 4px rgba(96, 63, 37, 0.14), 0 1px 2px rgba(96, 63, 37, 0.08);
+  --tag-text-sat: 35%;
+  --tag-text-light: 38%;
+  --tag-border-sat: 42%;
+  --tag-border-light: 70%;
+  --tag-border-alpha: 0.8;
+  --tag-bg-sat: 60%;
+  --tag-bg-light: 88%;
+  --tag-bg-alpha: 1;
+}
+
+/* ─────────────────────────────────────────────
+   DARK NEON
+   Source: https://www.ysdaima.com/palettes/ui-dark-neon/
+───────────────────────────────────────────── */
+[data-theme="dark-neon"],
+[data-theme="dark"] {
+  --bg:        #0c1220;
+  --bg2:       #111b30;
+  --bg3:       #17243d;
+  --bg4:       #213251;
+  --surface:   #101827;
+  --border:    #24324d;
+  --border2:   #31456a;
+  --text:      #e7f0ff;
+  --text2:     #91a4c8;
+  --text3:     #566786;
+  --accent:    #38bdf8;
+  --accent2:   #c084fc;
+  --accent-soft: rgba(56, 189, 248, 0.18);
+  --accent-contrast: #08111d;
+  --red:       #ff6b8b;
+  --green:     #4ade80;
+  --on-color:  var(--accent);
+  --off-color: #4c5a73;
+  --grid-color: rgba(132, 188, 255, 0.05);
+  --grid-size: 28px;
+  --shadow:    0 4px 12px rgba(1, 8, 20, 0.45);
+  --tag-text-sat: 62%;
+  --tag-text-light: 80%;
+  --tag-border-sat: 32%;
+  --tag-border-light: 52%;
+  --tag-border-alpha: 0.74;
+  --tag-bg-sat: 34%;
+  --tag-bg-light: 30%;
+  --tag-bg-alpha: 0.76;
+}
+
+/* ─────────────────────────────────────────────
+   FASHION MINIMAL
+   Source: https://www.ysdaima.com/palettes/brand-fashion-minimal/
+───────────────────────────────────────────── */
+[data-theme="fashion-minimal"] {
+  --bg:        #f3f3f3;
+  --bg2:       #ebebeb;
+  --bg3:       #dfdfdf;
+  --bg4:       #cfcfcf;
+  --surface:   #ffffff;
+  --border:    #d9d9d9;
+  --border2:   #bbbbbb;
+  --text:      #111111;
+  --text2:     #4c4c4c;
+  --text3:     #9b9b9b;
+  --accent:    #000000;
+  --accent2:   #b0b0b0;
+  --accent-soft: rgba(0, 0, 0, 0.12);
+  --accent-contrast: #ffffff;
+  --red:       #8a3030;
+  --green:     #4d6a58;
+  --on-color:  var(--accent);
+  --off-color: #9a9a9a;
+  --grid-color: rgba(0,0,0,0.045);
+  --grid-size: 28px;
+  --shadow:    0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.05);
+  --tag-text-sat: 6%;
+  --tag-text-light: 32%;
+  --tag-border-sat: 8%;
+  --tag-border-light: 75%;
+  --tag-border-alpha: 0.86;
+  --tag-bg-sat: 8%;
+  --tag-bg-light: 93%;
+  --tag-bg-alpha: 1;
+}
+
+/* ─────────────────────────────────────────────
+   SUMMER DOPAMINE
+   Source: https://www.ysdaima.com/palettes/style-dopamine/
+───────────────────────────────────────────── */
+[data-theme="summer-dopamine"] {
+  --bg:        #fff5ee;
+  --bg2:       #ffe8f4;
+  --bg3:       #ffd7e8;
+  --bg4:       #ffc4d8;
+  --surface:   #fffdfa;
+  --border:    #f8bfd6;
+  --border2:   #e09db6;
+  --text:      #2e2033;
+  --text2:     #6c4d72;
+  --text3:     #b282a8;
+  --accent:    #ff69b4;
+  --accent2:   #00ffff;
+  --accent-soft: rgba(255, 105, 180, 0.18);
+  --accent-contrast: #25101f;
+  --red:       #ff5e0e;
+  --green:     #32cd32;
+  --on-color:  var(--accent);
+  --off-color: #b48aa5;
+  --grid-color: rgba(255, 94, 14, 0.055);
+  --grid-size: 28px;
+  --shadow:    0 2px 8px rgba(255, 105, 180, 0.12);
+  --tag-text-sat: 72%;
+  --tag-text-light: 38%;
+  --tag-border-sat: 64%;
+  --tag-border-light: 70%;
+  --tag-border-alpha: 0.82;
+  --tag-bg-sat: 80%;
+  --tag-bg-light: 90%;
+  --tag-bg-alpha: 1;
+}
+
+/* ─────────────────────────────────────────────
+   RETRO FAMICOM
+   Source inspiration: https://en.wikipedia.org/wiki/Nintendo_Entertainment_System
+   ("predominantly white plastic with a dark red trim")
+───────────────────────────────────────────── */
+[data-theme="retro-famicom"] {
+  --bg:        #f7efe3;
+  --bg2:       #efe2cf;
+  --bg3:       #e1cfb8;
+  --bg4:       #ceb395;
+  --surface:   #fff9f1;
+  --border:    #d9c2a8;
+  --border2:   #c2a07f;
+  --text:      #4a302c;
+  --text2:     #7b6058;
+  --text3:     #ae9184;
+  --accent:    #9e2f2f;
+  --accent2:   #f5eedf;
+  --accent-soft: rgba(158, 47, 47, 0.18);
+  --accent-contrast: #fff8f0;
+  --red:       #9e2f2f;
+  --green:     #7b8a63;
+  --on-color:  var(--accent);
+  --off-color: #b29886;
+  --grid-color: rgba(158, 47, 47, 0.055);
+  --grid-size: 28px;
+  --shadow:    0 2px 6px rgba(112, 54, 42, 0.14);
+  --tag-text-sat: 38%;
+  --tag-text-light: 36%;
+  --tag-border-sat: 40%;
+  --tag-border-light: 72%;
+  --tag-border-alpha: 0.84;
+  --tag-bg-sat: 62%;
+  --tag-bg-light: 92%;
+  --tag-bg-alpha: 1;
+}
+
+/* ─────────────────────────────────────────────
+   BASE RESET
+───────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-ui);
+  font-size: 13px;
+  line-height: 1.68;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  user-select: none;
+  background-image:
+    radial-gradient(circle, var(--grid-color) 1px, transparent 1px);
+  background-size: var(--grid-size) var(--grid-size);
+  transition: background-color 0.25s, color 0.25s;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+input, textarea {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  color: var(--text);
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
+  width: 100%;
+  resize: none;
+}
+
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: var(--text3); }
+
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.mono { font-family: 'IBM Plex Mono', monospace; }

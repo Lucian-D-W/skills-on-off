@@ -1,0 +1,92 @@
+{
+  "name": "skill-manager",
+  "version": "1.2.3",
+  "description": "本地 AI Agent Skills 管理工具",
+  "author": "Lucian W. (lucian-d-w)",
+  "license": "GPL-3.0-only",
+  "main": "dist-electron/main.js",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "setup": "node node_modules/electron/install.js && npm run rebuild",
+    "rebuild": "electron-rebuild -f -w better-sqlite3",
+    "build": "vite build",
+    "release:win": "npm run build && electron-builder --win portable nsis --x64 --publish never",
+    "preview": "vite preview",
+    "test": "vitest",
+    "test:watch": "vitest",
+    "test:run": "vitest run",
+    "typecheck": "tsc --noEmit -p tsconfig.json && tsc --noEmit -p tsconfig.node.json"
+  },
+  "dependencies": {
+    "better-sqlite3": "^9.4.3",
+    "extract-zip": "^2.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@electron/rebuild": "^4.0.3",
+    "@types/better-sqlite3": "^7.6.8",
+    "@types/node": "^20.11.5",
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
+    "@vitejs/plugin-react": "^4.2.1",
+    "electron": "^29.0.1",
+    "electron-builder": "^24.13.3",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.12",
+    "vite-plugin-electron": "^0.28.4",
+    "vite-plugin-electron-renderer": "^0.14.5",
+    "vitest": "^2.1.8"
+  },
+  "build": {
+    "appId": "com.homeforai.skill-manager",
+    "productName": "skills on-off",
+    "copyright": "Copyright © 2026 Lucian W. (lucian-d-w)",
+    "directories": {
+      "output": "release",
+      "buildResources": "build"
+    },
+    "files": [
+      "dist/**/*",
+      "dist-electron/**/*",
+      "public/**/*",
+      "package.json",
+      "LICENSE",
+      "COPYRIGHT.md",
+      "THIRD_PARTY_NOTICES.md",
+      "licenses/**/*"
+    ],
+    "extraResources": [
+      {
+        "from": "public/app-icon.png",
+        "to": "app-icon.png"
+      },
+      {
+        "from": "LICENSE",
+        "to": "LICENSE.skills-on-off.txt"
+      },
+      {
+        "from": "COPYRIGHT.md",
+        "to": "COPYRIGHT.md"
+      },
+      {
+        "from": "THIRD_PARTY_NOTICES.md",
+        "to": "THIRD_PARTY_NOTICES.md"
+      },
+      {
+        "from": "licenses",
+        "to": "licenses"
+      }
+    ],
+    "win": {
+      "icon": "build/icon.ico",
+      "target": [
+        "portable",
+        "nsis"
+      ]
+    }
+  }
+}
